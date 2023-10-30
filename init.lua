@@ -1,0 +1,2 @@
+require("sschulz")
+print("hello")
