@@ -21,6 +21,8 @@ use ({ "rose-pine/nvim", as = "rose-pine", config = function()
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
   use('nvim-treesitter/playground')
   use('mbbill/undotree')
+  use("theprimeagen/harpoon")
+  use("theprimagen/refactoring.nvim")
   use('tpope/vim-fugitive')
   use {
   'VonHeikemen/lsp-zero.nvim',
