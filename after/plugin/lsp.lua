@@ -17,7 +17,7 @@ end)
 
 require('mason').setup({})
 require('mason-lspconfig').setup({
-  ensure_installed = {'tsserver', 'pyright','clangd', 'bashls', 'rust_analyzer'},
+  ensure_installed = {'jdtls', 'tsserver', 'pyright','clangd', 'bashls', 'rust_analyzer'},
   handlers = {
     lsp_zero.default_setup,
     lua_ls = function()
@@ -51,5 +51,6 @@ lsp_zero.on_attach(function(client, bufnr)
   lsp_zero.default_keymaps({buffer = bufnr})
 end)
 require'lspconfig'.rust_analyzer.setup{}
-
+require'lspconfig'.pyright.setup{}
+require'lspconfig'.clangd.setup{}
 

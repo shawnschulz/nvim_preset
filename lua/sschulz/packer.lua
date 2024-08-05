@@ -22,8 +22,9 @@ use ({ "rose-pine/nvim", as = "rose-pine", config = function()
   use('nvim-treesitter/playground')
   use('mbbill/undotree')
   use("theprimeagen/harpoon")
-  use("theprimagen/refactoring.nvim")
   use('tpope/vim-fugitive')
+  use('mfussenegger/nvim-dap')
+  use('jalvesaq/vimcmdline')
   use {
   'VonHeikemen/lsp-zero.nvim',
   branch = 'v3.x',
@@ -48,5 +49,14 @@ use {
     "williamboman/mason-lspconfig.nvim",
     "neovim/nvim-lspconfig",
 }
+use {
+    'goolord/alpha-nvim',
+    requires = {
+        'nvim-tree/nvim-web-devicons',
+        'nvim-lua/plenary.nvim'
+    },
+    config = function ()
+        require'alpha'.setup(require'alpha.themes.startify'.config)
+    end
+}
 end)
-
