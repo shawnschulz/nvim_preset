@@ -38,6 +38,10 @@ use ({ "rose-pine/nvim", as = "rose-pine", config = function()
     -- Autocompletion
     {'hrsh7th/nvim-cmp'},
     {'hrsh7th/cmp-nvim-lsp'},
+    {'hrsh7th/cmp-buffer'},
+    {'hrsh7th/cmp-path'},
+    {'hrsh7th/cmp-cmdline'},
+    {'hrsh7th/nvim-cmp'},
     {'L3MON4D3/LuaSnip'},
   }
 }
@@ -59,4 +63,11 @@ use {
         require'alpha'.setup(require'alpha.themes.startify'.config)
     end
 }
+use 'airblade/vim-gitgutter'
+use {
+  'nvim-lualine/lualine.nvim',
+  requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+}
+use 'mg980/vim-visual-multi'
+use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release' }
 end)

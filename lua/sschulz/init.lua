@@ -1,2 +1,5 @@
 require("sschulz.remap")
 require("sschulz.set") 
+require("sschulz.cmp_setup")
+require('lualine').setup()
+require('nvim-tree').setup()
