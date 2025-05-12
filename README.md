@@ -24,6 +24,20 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 ```
 
+4. Packer sync
+
+```
+ nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+```
+
+Then in the nvim editor type:
+
+```
+:PackerSync
+```
+
+## Optional - To get ui elements to properly display 
+
 4. Installing Alacritty (you can use any terminal emulator that supports nerd font icons)
 
 You need rust installed for this one
