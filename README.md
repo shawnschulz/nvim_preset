@@ -27,12 +27,13 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 4. Packer sync
 
 ```
- nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+ nvim ~/.config/nvim/lua/sschulz/packer.lua
 ```
 
 Then in the nvim editor type:
 
 ```
+:so
 :PackerSync
 ```
 
